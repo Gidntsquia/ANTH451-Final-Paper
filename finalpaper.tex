@@ -14,6 +14,8 @@
 \usepackage{geometry}       % Adjust page margins
 \usepackage{setspace}       % Adjust line spacing
 
+\graphicspath{{Images/}}
+
 % Title and Author
 \title{Survey of Strontium Isotope Analysis in Archeolgical Research of Ancient Egypt}
 \author{Jaxon Lee}
@@ -38,6 +40,14 @@ elements such as oxygen, carbon, or strontoum using chemistry. Strontium isotope
 in particular is useful for archeologists since it helps them understand the geographic
 movement of humans and animals.
 
+Strontium isotope analysis has gained significant moementum in the last 10 years
+due to advancements in measuring technology \citep{holt2021}. As a result,
+an study of strontium analysis and its application to archeology as a whole
+would be too large of a scope for this paper. As a result, I will focus on
+strontium isotope analysis as it pertains to archeological research in Ancient
+Egypt, which I chose because of strontrium analysis' interesting application
+to Egyptian mummies.
+
 In this paper, I will detail how strontium isotope analysis works, its main
 use cases, and a few interesting case studies that utilize it.
 % - Purpose
@@ -45,15 +55,15 @@ use cases, and a few interesting case studies that utilize it.
 % - Setting up what I'm going to say in this paper (i.e. detail how the method works, discuss main use cases, and delve into specific case studies)
 
 
-\section{Strontium Analysis}
+\section{Strontium Isotope Analysis}
 \subsection{Overview}
 % What is it? How does it work? History of it
 
 % What is it
 
-\subsection{Rationale}
-% Rationale for using Strontium 
-Sr is an element, which occurs naturally at varying concentrations in rock formations.
+% \subsection{Rationale}
+% Rationale for using Strontium over things like carbon, oxygen, etc.
+Strontium is an element, which occurs naturally at varying concentrations in rock formations.
 Strontium gets into the water stream through erosion and eventually is inadvetently consumed by plants and animals in trace amounts \citep{bartelink2019}.
 Eventually, when humans or animals inevitably consume plants, water, or other animals,
 a small amount of strontium gets into their bones and tissue. Notably, although the amount is trace, the
@@ -63,6 +73,7 @@ Measuring the strontium level of longer bones gives insight into the last 7-10
 years of a person's life and measuring the strontium of hair can tell where someone
 took residence immediately prior to death \citep{kamenov2014}
 
+\subsection{Purpose}
 Although this is trivially already useful for fields such as forensics \citep{kamenov2014},
 archeologists usually have a good idea of where a person lived before they died
 since people are usually buried where they lived. However, since tooth enamel
@@ -71,35 +82,83 @@ that the person lived in during their tooth formation, i.e., when they were a ch
 \citep*{holt2021,kozieradzkaogunmakin2021,lazzerini2021}. Thus, archeologists can
 identify the "provenance," or place of origin, of skeletal remains they dig up \citep{holt2021}.
 
+\subsection{How It Works}
+Now, I will describe in detail how archeologists do strontium isotope analysis.
+First, an "isotope" is a version of an element with a particular atomic weight,
+which is indicated by a superscripted number to the left of the elemental symbol \citep{Meave60_2015}.
+For example, one isotope of Oxygen is \textsuperscript{18}O, where 18 represents
+the atomic weight of the isotope. There are four possible isotopes of strontium in
+nature \citep{holt2021}, but only two are relevant to strontium isotope analysis: \textsuperscript{87}Sr and \textsuperscript{86}Sr.
+Notably, these isotopes are extremely stable, so they do not react with other elements
+and their abundances in the environment will stay constant unless outside forces interfere \citep{Long1998}.
+
+One such outside force is the radioactivity of \textsuperscript{87}Rb, which forms \textsuperscript{87}Sr when it decays. So, the \textsuperscript{87}Sr concentration in a substance
+will increase over time depending on the initial concentration of \textsuperscript{87}Rb.
+\textsuperscript{87}Rb has a half-life of 48.8 billion years, so it takes billions of years
+for \textsuperscript{87}Rb to fully decay into \textsuperscript{87}Sr; as a result, \textsuperscript{87}Rb will always
+have a small but measurable effect on the \textsuperscript{87}Sr levels of the substance it is in.
+Thus, the relative concentraion of \textsuperscript{87}Sr / \textsuperscript{86}Sr is constantly increasing.
+
+In contrast with the stable strontium, \textsuperscript{87}Rb varies signifantly across the environment.
+This is because of how rocks form; in deep Earth layers, magma mixes and moves constantly, which spreads and changes \textsuperscript{87}Rb concentrations.
+In addition, when the magma cools,
+\textsuperscript{87}Rb will spread out such that even different parts of the same
+rock formation has different \textsuperscript{87}Rb concentrations.
+
+Throughout all of this, \textsuperscript{87}Sr and \textsuperscript{86}Sr concentrations remain
+generally constant due to the aformentioned stability and the fact that strontium isotopes
+do not fractionate, or separate, at magma tempeartures.
+% ^ This might not be right.
+Therefore, different rock formations will have different quantities of
+\textsuperscript{87}Sr and \textsuperscript{86}Sr depending on where the rock formed,
+when it formed, and the initial concentrations of \textsuperscript{87}Rb, \textsuperscript{87}Sr, and \textsuperscript{86}Sr \citep{Long1998}.
+
+For the purposes of archeology, we can assume that every rock has a random, unique
+concentration of \textsuperscript{87}Sr and \textsuperscript{86}Sr. As stated previosuly,
+the concentrations of these two values eventually travels through the ecosystem to all nearby
+plants and animals. Since the exact concentrations may get diluted, archeologists often
+measure the ratio of \textsuperscript{87}Sr / \textsuperscript{86}Sr since this
+remains constant through the strontium transfer process (SOURCE NEEDED). Archeologists
+can use a mass spectrometer to determine this ratio \citep{Long1998}.
+
+In summary, \textsuperscript{87}Sr / \textsuperscript{86}Sr ratios vary greatly
+across the environment, but both isotopes are stable once formed. Therefore, measuring this
+strontium isotope ratio is desirable because there are essentially no unpredictable
+factors that can affect the measurement.
 
 % Purpose
-\subsection{Use Cases}
-- "Provenance" - place of origin \citep{holt2021}
-- Preminent goal is to track movement of animals and humans
-- "Local vs non local" \citep{holt2021}
-- Can be used on "ancient organisms" \citep{crowley2017}
-- Origin of glasswork [11] -- "Alexandrian glass"
-
 % % How it works
-Here is how it works.
-% Main premise
-- Each region of rocks has a unique 87Sr / 86Sr ratio
-- Plants and animals inherit the 87Sr/86Sr ratio of their environment (isoscape) [4]
-- If we know the 87Sr/86Sr ratio of a region and the 87Sr/86ASr ratio of organic matter, we can tell if that organic matter came from that region.
---> No "fractionation" \citep{bartelink2019}
-- For humans: sample tooth enamel b/c this is formed in childhood. \citep{kozieradzkaogunmakin2021} \citep{holt2021}
---> also \citep{lazzerini2021}
---> also doesn't really break down \citep{kozieradzkaogunmakin2021}
---> Enamel = childhood, Bones = last "7-10" years, Hair = immediately prior to death \citep{kamenov2014}
+% Here is how it works.
+% % Main premise
+% - Each region of rocks has a unique 87Sr / 86Sr ratio
+% - Plants and animals inherit the 87Sr/86Sr ratio of their environment (isoscape) [4]
+% - If we know the 87Sr/86Sr ratio of a region and the 87Sr/86ASr ratio of organic matter, we can tell if that organic matter came from that region.
+% --> No "fractionation" \citep{bartelink2019}
+% - For humans: sample tooth enamel b/c this is formed in childhood. \citep{kozieradzkaogunmakin2021} \citep{holt2021}
+% --> also \citep{lazzerini2021}
+% --> also doesn't really break down \citep{kozieradzkaogunmakin2021}
+% --> Enamel = childhood, Bones = last "7-10" years, Hair = immediately prior to death \citep{kamenov2014}
 
-"Strontium has four naturally occurring isotopes: 88Sr, 87Sr, 86Sr, and 84Sr. 87Sr is formed as the radiogenic daughter isotope of 87Rb (rubidium); the decay of 87Rb leads to different abundances of 87Sr in rocks depending on their age and their original 87Rb content (Dickin, 1995). The ratio of the radiogenic 87Sr to the naturally abundant 86Sr is variable across lithologies of different ages and with different formation histories. Due to the 48.8 billion year half-life of 87Rb (Faure and Mensing, 2005, p. 77), the ratio of 87Sr to 86Sr does not change significantly over the time scales that are of interest to researchers in archaeology, biology, forensics, food science, and other disciplines that deal with the comparatively recent past. This relative stability of the 87Sr/86Sr ratio allows strontium isotopes to be used to provenance biological materials that have taken up strontium from their environments."
+% "Strontium has four naturally occurring isotopes: 88Sr, 87Sr, 86Sr, and 84Sr. 
+% 87Sr is formed as the radiogenic daughter isotope of 87Rb (rubidium); the 
+% decay of 87Rb leads to different abundances of 87Sr in rocks depending on their 
+% age and their original 87Rb content (Dickin, 1995). The ratio of the radiogenic 
+% 87Sr to the naturally abundant 86Sr is variable across lithologies of different 
+% ages and with different formation histories. Due to the 48.8 billion year 
+% half-life of 87Rb (Faure and Mensing, 2005, p. 77), the ratio of 87Sr to 86Sr 
+% does not change significantly over the time scales that are of interest to 
+% researchers in archaeology, biology, forensics, food science, and other 
+% disciplines that deal with the comparatively recent past. This relative 
+% stability of the 87Sr/86Sr ratio allows strontium isotopes to be used to 
+% provenance biological materials that have taken up strontium from their environments."
+
 %  TODO: Go into more specific detail on how researchers carry this out.
 
 % \citep{holt2021} https://www.sciencedirect.com/science/article/pii/S0012825221000933?casa_token=FLhhJysXAz4AAAAA:VTVcEUD71ZsaI0siB8F-2VvDoI03s2EC1zN-20NrsRFemTiffkhW5X0yz_8Iv1-NxARwqwhL6vE
 % \citep{crowley2017} https://onlinelibrary.wiley.com/doi/full/10.1111/brv.12217?casa_token=fzF_HvyFA3EAAAAA%3ACWLmQaH1S_B4GXOgCmSZJYwQr-NNwC4iUxP1kPFA8Tw05-d65rejwmCkDgQ3itV6APu8LbHSWdOOcuCY
 % [4] https://link.springer.com/article/10.1007/BF01100444
 % \citep{kozieradzkaogunmakin2021} https://brill.com/display/book/9789004433755/BP000007.xml
-% [11] https://www.nature.com/articles/s41598-020-68089-w
+% \citep{barfod2020} https://www.nature.com/articles/s41598-020-68089-w
 % \citep{kamenov2014} https://anthrosource.onlinelibrary.wiley.com/doi/full/10.1111/napa.12048?casa_token=rWbuuiJYOvIAAAAA%3AcVqQVNRLjm3TVnsmeJyJ4JxPgPuKJeEbIRmWrQ_lV49lztX-XaL17cd9bn3bxJeketNDv0zj1b2jcWRT
 % \citep{lazzerini2021} https://www.nature.com/articles/s41598-021-81923-z
 
@@ -107,56 +166,163 @@ Here is how it works.
 % How they make isoscapes
 In order for strontium measuremnts to be useful, archeologists need a baseline to compare to.
 So, much of the research into strontium isotope analysis in the last decade has gone
-into mapping "isoscapes," which are maps of the expected strontium isotope ratios of tissue in various geographic regions (CITATION NEEDED).
-]
+into mapping "isoscapes," which are maps of the expected strontium isotope ratios
+of tissue in various geographic regions (CITATION NEEDED).
+
 I will discuss the three main approaches for creating an isoscape: domain mapping,
-contour mapping, and machine learning \citep{bataille2020}.
+contour mapping, and machine learning \citep{holt2021}. I will also go into their
+strengths and weaknesses.
 \subsubsection{Domain Mapping}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.33\textwidth]{domain_mapping.jpg}
+    \caption{A domain map of Great Britain \citep{evans2010}.}
+    \label{fig:domain_mapping}
+\end{figure}
+To do domain mapping, researchers simply sample the strontium isotope ratios of
+various locations, plot their results on a map, and then group similar results
+together into "domains." This is the simplest approach to creating an isoscape.
+An example of a domain map can be seen in Figure~\ref{fig:domain_mapping}.
+
 \subsubsection{Contour Mapping}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.75\textwidth]{contour_mapping.jpg}
+    \caption{A contour map of France \citep{willmes2018}}
+    \label{fig:contour_mapping}
+\end{figure}
+
+This approach builds on domain mapping. Researchers apply statistical methods
+such as Inverse Distance Weighting, ordinary kiging, empirical Bayesian kirigin,
+and cokroing extrapolate strontium isotope ratios \citep{holt2021}.
+
 \subsubsection{Machine Learning}
+This is the most recent approach to creating isoscapes. Researchers use machine
+learning methods such as random forest regression in order to combine domain and contour
+maps into one cohesive isoscape \citep{willmes2018}.
 
 
-
-- Domain mapping, contour mapping, machine learning \citep{bataille2020}
-- Sometimes predict \citep{bataille2020}
-- Collect data for Sr ratios in regions today \citep{bataille2020} [8, section 2.2]
-- Combine them using various methods, such as "random forest regression method" \citep{bataille2020}
-- Isoscape size can be large, which can make location precision low \citep{holt2021}
+% - Domain mapping, contour mapping, machine learning \citep{holt2021}
+% - Sometimes predict \citep{holt2021}
+% - Collect data for Sr ratios in regions today \citep{holt2021} \citep{bataille2020}
+% - Combine them using various methods, such as "random forest regression method" \citep{holt2021}
+% - Isoscape size can be large, which can make location precision low \citep{holt2021}
 
 % \citep{bataille2020} https://www.sciencedirect.com/science/article/abs/pii/S0031018220302947 
 % [10] http://eprints.bournemouth.ac.uk/33461/ -- example of mapping isoscape using animals
+% \citep{evans2010} https://pubs.geoscienceworld.org/jgs/article-abstract/167/1/1/372634/Spatial-variations-in-biosphere-87Sr-86Sr-in?redirectedFrom=fulltext
 
+
+\subsection{Use Cases}
+% Should move this section to "Main Areas"
+As stated before, identifying "provenance," or place of origin, is the main use of
+strontium isotope analysis for archeologists. By studying tooth enamel of humans and animals, the place of origin for that human
+or animal can be determined \citep{holt2021}. This assumes that the person or animal did not
+consistently travel long distances during the formation of their teeth during childhood. For archeologists, this is generally
+a reasonable assumption since humans were not highly mobile in history (SOURCE NEEDED).
+Understanding provenance gives insight into the movement of the subject, which can
+be used to answer questions about historical human migration patterns. In this section, I will briefly discuss other
+applications of the method for archeologists.
+
+\subsubsection{Local vs Non-Local}
+Archeologists often measure the ratio of
+skeletons in a graveyard that came from the area around the graveyard versus some
+far away area \citep{holt2021}. This approach has the advantage of not requiring
+a perfect isoscape since any skeleton that does not fall in the range for the specific
+area under study may be classified as "non-local" without needing to know exactly where
+they came from.
+
+\subsubsection{Animal Origins}
+As another extension of provenance study, prehistoric animal fossils can be analyzed
+to uncover their place of origin.
+% NEED TO FIND SOURCE THAT DISCUSSES THIS MORE
+
+\subsubsection{Material Origins}
+More rarely, archeologists use strontium isotope analysis to determine the origin
+of physical artifacts. For example, Gry Brafod et al. concluded that celebrated
+clear glass in Roman cities came from Egypt \citep{barfod2020}.
+% - "Provenance" - place of origin \citep{holt2021}
+% - Preminent goal is to track movement of animals and humans
+% - "Local vs non local" \citep{holt2021}
+% - Can be used on "ancient organisms" \citep{crowley2017}
+% - Origin of glasswork \citep{barfod2020} -- "Alexandrian glass"
+
+
+\subsection{History}
+Originally, strontium analysis was used simply to study erosion of rocks and
+tracing how rock formations' strontium levels travelled around an environment
+through rivers \citep{crowley2017}. Around the late 1980s and early 1990s, archeologists theorized
+that strontium could be used to learn where a human skeleton originated. This spawned
+a flood of studies to prove its viability and test its limitations \citep{crowley2017}.
+Since then, archeologists have increasingly used strontium isotope analysis to answer
+questions of human provenance. Recently, there has been an explosion of strontium
+isotope analysis research \citep{crowley2017}, which is likely due to scientific
+advnacnements such as high performance laser ablation and multicollector inductively coupled
+plasma mass sepctrometry, which both make strontium analysis more accurate and more accurate \citep{holt2021}.
+According to Evans Holt et al., the main focus of strontium research now is creating new isoscapes
+and refining existing ones.
 % History
-- Originally about rock erosion and where Sr came from regarding rivers \citep{crowley2017}
-- Late 80s/early 90s-- first uses of Sr to detect where person came from. Lots of studies to prove that it could viably be used in this way\citep{crowley2017}
-- Ramping up in last decade \citep{crowley2017}
-- A lot of recent advancements  \citep{holt2021}
--> "high performance laser ablation" and "multicollector inductively coupled plasma mass spectrometry"
-- Current goal- isoscapes \citep{holt2021}
+% - Age of rock
+% - Originally about rock erosion and where Sr came from regarding rivers \citep{crowley2017}
+% - Late 80s/early 90s-- first uses of Sr to detect where person came from. Lots of studies to prove that it could viably be used in this way\citep{crowley2017}
+% - Ramping up in last decade \citep{crowley2017}
+% - A lot of recent advancements  \citep{holt2021}
+% -> "high performance laser ablation" and "multicollector inductively coupled plasma mass spectrometry"
+% - Current goal- isoscapes \citep{holt2021}
+
+
 
 
 % Limitations
-- Often is not precise to conclusively answer questions by itself. Best used in combination with other methods, such as analyzing other isotopes. \citep{holt2021}
-- Expensive \citep{crowley2017}
+% - Often is not precise to conclusively answer questions by itself. Best used in combination with other methods, such as analyzing other isotopes. \citep{holt2021}
+% - Expensive \citep{crowley2017}
+\subsection{Limitations}
+
 
 % Sources:
 % [Same 1] https://www.sciencedirect.com/science/article/pii/S0012825221000933?casa_token=H3KiKu8CjckAAAAA:B4tj30AghfGVDqr1qDlsstbfhMKHja2hn4i0s8Iopsn4oVXcOvlsbJpViADpjDOJlWZUdAWuRXo
 
 
 \section{Main Areas}
-- Ancient habitat use \citep{crowley2017}
-- Animal origins \citep{crowley2017}
---> "anadromous fish", "extinct hominins"
-- Farm product sources, like rice, corn, and drugs \citep{crowley2017}
-- Migration routes \citep{crowley2017}
-- Where illegally poached animals came from \citep{crowley2017}
-- Range of invasive species \citep{crowley2017}
-- Understand landscape use \citep{crowley2017}
-- Forensics \citep{kamenov2014}
+In this section, I will discuss how strontium isotope analysis is used in archeology and beyond.
 
-I've chosen Ancient Egypt because Sr analysis is particularly easy to apply b/c of mummies.
-- Lots of stuff on the Hyksos. [5] [7] [9] [12]
-- \citep{kozieradzkaogunmakin2021} -- combining Sr analysis with diet analysis to see dietary differences b/w locals and non-locals. No meaningful difference found. Conclusion: confirming previous diet research, can't really use Oxygen analysis to determine local-ness
+\subsection{Ancient Habitat Use and Settlement Patterns}
+Strontium isotope analysis unveils insights into settlement patterns. It allows archaeologists to discern whether individuals were indigenous or from other regions, shedding light on migration, resource utilization, and societal dynamics \citep{crowley2017}.
+
+\subsection{Tracing Animal Origins and Interactions}
+Strontium isotope analysis is instrumental in tracing the origins of diverse animals like anadromous fish and extinct hominins. This exploration offers valuable perspectives on ancient ecosystems, human-animal interactions, and resource exploitation by past societies \citep{crowley2017}.
+
+\subsection{Unraveling Farm Product Sources}
+By utilizing strontium isotope analysis, researchers uncover the geographic origins of farm products like rice, corn, and medicinal plants. This knowledge contributes to understanding ancient agricultural practices, trade networks, and resource distribution \citep{crowley2017}.
+
+\subsection{Mapping Migration Routes}
+The application of strontium isotope analysis in mapping migration routes provides critical insights into ancient human mobility, societal exchanges, and the patterns of population movement throughout history \citep{crowley2017}.
+
+\subsection{Tracing the Origins of Illegally Poached Animals}
+Efforts to combat illegal wildlife trade can be supported through the identification of regions from which poached animals originate using strontium isotope analysis \citep{crowley2017}.
+
+\subsection{Mapping the Range of Invasive Species}
+Understanding the spread and impact of invasive species in different regions is essential for assessing environmental changes and human influences. Strontium isotope analysis helps in mapping the distribution and movement patterns of invasive species in archaeological contexts \citep{crowley2017}.
+
+\subsection{Comprehending Landscape Use}
+Strontium isotope analysis aids in understanding ancient populations' interactions and utilization of landscapes. This perspective enriches the reconstruction of ancient societies, offering insights into settlement patterns and land use practices \citep{crowley2017}.
+
+\subsection{Application in Forensic Studies}
+Beyond archaeology, the use of strontium isotope analysis extends to forensic studies, aiding in determining the geographic origins of individuals and supporting forensic investigations \citep{kamenov2014}.
+
+% - Ancient habitat use \citep{crowley2017}
+% - Animal origins \citep{crowley2017}
+% --> "anadromous fish", "extinct hominins"
+% - Farm product sources, like rice, corn, and drugs \citep{crowley2017}
+% - Migration routes \citep{crowley2017}
+% - Where illegally poached animals came from \citep{crowley2017}
+% - Range of invasive species \citep{crowley2017}
+% - Understand landscape use \citep{crowley2017}
+% - Forensics \citep{kamenov2014}
+
+% I've chosen Ancient Egypt because Sr analysis is particularly easy to apply b/c of mummies.
+% - Lots of stuff on the Hyksos. [5] [7] [9] [12]
+% - \citep{kozieradzkaogunmakin2021} -- combining Sr analysis with diet analysis to see dietary differences b/w locals and non-locals. No meaningful difference found. Conclusion: confirming previous diet research, can't really use Oxygen analysis to determine local-ness
 
 % [Same 1] https://www.sciencedirect.com/science/article/pii/S0012825221000933?casa_token=H3KiKu8CjckAAAAA:B4tj30AghfGVDqr1qDlsstbfhMKHja2hn4i0s8Iopsn4oVXcOvlsbJpViADpjDOJlWZUdAWuRXo
 % [7] https://link.springer.com/article/10.1007/s12520-021-01344-x
@@ -167,6 +333,14 @@ I've chosen Ancient Egypt because Sr analysis is particularly easy to apply b/c 
 \section{Specific Case Studies}
 \subsection{Hyksos}
 % Hyksos
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{hyksos_painting.jpg}
+    \caption{Egyptian painting of Abisha the Hyksos \citep{wikipediaHyksos}}
+    \label{fig:hyksos_painting}
+\end{figure}
+
 - 1638 BC - 1530 BC [5]
 - Foreign Hysos rise to power
 - Lots of non-local women before Hyksos rule - likely gradual power grab by Hyksos, which contradicts historical narrative [5]
@@ -182,6 +356,12 @@ I've chosen Ancient Egypt because Sr analysis is particularly easy to apply b/c 
 
 \subsection{Mummified Birds}
 % Mummified Birds
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.25\textwidth]{mummy_bird.jpg}
+    \caption{An ancient Egyptian mummified bird \citep{wikipediaBird}}
+    \label{fig:mummy_bird}
+\end{figure}
 - Where ancient Egyptian mummified birds came from
 - Farmed vs hunted -- capabilities, economy, and effect on environment
 - Some bird gods like Horus and Thoth
@@ -206,12 +386,11 @@ I've chosen Ancient Egypt because Sr analysis is particularly easy to apply b/c 
 % [13] https://www.sciencedirect.com/science/article/pii/S2352409X18305509?casa_token=5XDdWMPYLpEAAAAA:YAvhcSklHzL7SZB_V2M3eqXaZK8AzFKP4Iw3pTXD0Opp1u-KSGONBW4X3lEHp5sc62fgnhWs0oU#s0015
 
 \section{Conclusion}
--
-
-\section*{Acknowledgments}
-
-% Acknowledge any individuals or organizations that contributed to your research.
-
+Strontium isotope analysis is a relevant and useful tool for archeologists studying
+Ancient Egypt. Recently, strontium isotope analysis has exploded in popularity for
+its utility in ascertaining provenance. Archeologists have increasingly taken
+advantage of this method to answer questions
+ranging from power rises to ancient economies to migrational patterns.
 % Bibliography
 \bibliographystyle{apalike}
 \bibliography{references} % Specify your bibliography file (e.g., references.bib)
